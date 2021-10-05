@@ -5,5 +5,6 @@
 //make the numbers for the dice
 //Pray lol
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("ready!!")
+    let dieContainer = document.createElement('div')
+    document.body.appendChild(dieContainer)
 })
