@@ -4,3 +4,6 @@
 
 //make the numbers for the dice
 //Pray lol
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("ready!!")
+})
