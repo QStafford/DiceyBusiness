@@ -14,16 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     myButton.addEventListener("click", function () {
         console.log("I've been clicked")
-        let Dice = document.createElement("div")
-        dieContainer.appendChild(Dice)
-        Dice.style.border = "5px solid black"
-        Dice.style.height = "60px"
-        Dice.style.width = "60px"
-        Dice.style.float = "left"
-        Dice.style.margin = "15px"
-        Dice.style.textAlign = "center"
-        Dice.style.fontSize = "50px"
-        Dice.style.fontWeight = "Bold"
+        new Die()
+
 
 
         let dieNum = document.createTextNode(Math.floor(Math.random() * 7))
@@ -32,25 +24,33 @@ document.addEventListener('DOMContentLoaded', function () {
         rollBtn.addEventListener("click", function () {
             console.log("Roll Click!")
             let dieNum2 = document.createTextNode(Math.floor(Math.random() * 7))
-            Dice.replaceWith(dieNum2)
+            Dice.append(dieNum2)
         })
     })
 
 
+    class Die {
+        constructor() {
+            let Dice = document.createElement("div")
+            this.value = Math.floor(Math.random() * 7)
+            Dice.textContent = this.value
+            Dice.style.border = "5px solid black"
+            Dice.style.height = "60px"
+            Dice.style.width = "60px"
+            Dice.style.float = "left"
+            Dice.style.margin = "15px"
+            Dice.style.textAlign = "center"
+            Dice.style.fontSize = "50px"
+            Dice.style.fontWeight = "Bold"
+            dieContainer.appendChild(Dice)
+        }
 
+    }
 
 })
 
 
 
-// class Die {
-//    constructor() {
-//        this.value = value
 
-//  }
-//      roll() {
-
-//}
-//}
 // const myButton = document.getElementById("dieGen")
 // myButton.addEventListener(() => new Die())
