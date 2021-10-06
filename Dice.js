@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     dieContainer.style.border = "10px solid black"
     dieContainer.style.height = "30em"
     const myButton = document.getElementById("dieGen")
-
+    const rollBtn = document.getElementById("diceRoll")
     myButton.addEventListener("click", function () {
         console.log("I've been clicked")
         new Die()
- 
+
 
     })
     class Die {
@@ -33,16 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
             Dice.style.fontWeight = "Bold"
             dieContainer.appendChild(Dice)
         }
-    //    const rollBtn = document.getElementById("diceRoll")
+    }
+
+})
     //     rollBtn.addEventListener("click", function () {
     //         console.log("Roll Click!")
     //         let dieNum2 = document.createTextNode(Math.floor(Math.random() * 7))
     //         Dice.append(dieNum2)
     //     })
     // })
-    }
 
-})
+
 
 
 
