@@ -29,17 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// class Die {
+//    constructor() {
+//        this.value = value
 
+//  }
+//      roll() {
 
-
-class Die {
-    constructor() {
-        this.value = value;
-    }
-
-    roll() {
-
-    }
-}
-
-//myButton.addEventListener(() => new Die())
+//}
+//}
+// const myButton = document.getElementById("dieGen")
+// myButton.addEventListener(() => new Die())
