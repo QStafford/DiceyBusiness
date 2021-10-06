@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         Dice.style.width = "60px"
         Dice.style.float = "left"
         Dice.style.margin = "15px"
+        Dice.style.textAlign = "center"
+        Dice.style.fontSize = "50px"
+        Dice.style.fontWeight = "Bold"
+
+
+        let dieNum = document.createTextNode(Math.floor(Math.random() * 7))
+        Dice.appendChild(dieNum)
+        
     })
 
     
