@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
             Dice.style.fontWeight = "Bold"
             dieContainer.appendChild(Dice)
             Dice.addEventListener("click",function() {
-                console.log("i've been clicked")
                 this.value = Math.floor(Math.random() * 7);
                 this.textContent=this.value;
+            Dice.addEventListener("dblclick",function(){
+                Dice.remove()
+            })
     })
         }
         static roll(){
