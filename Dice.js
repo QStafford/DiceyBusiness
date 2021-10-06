@@ -15,11 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     myButton.addEventListener("click", function () {
         console.log("I've been clicked")
         new Die()
-
-
-
-        let dieNum = document.createTextNode(Math.floor(Math.random() * 7))
-        Dice.appendChild(dieNum)
         const rollBtn = document.getElementById("diceRoll")
         rollBtn.addEventListener("click", function () {
             console.log("Roll Click!")
