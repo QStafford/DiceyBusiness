@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         
     })
 
+    const rollBtn = document.getElementById("diceRoll")
+    rollBtn.addEventListener("click",function(){
+        console.log("Roll Click!")
+    })
     
 
 })
