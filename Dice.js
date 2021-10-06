@@ -12,11 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
     dieContainer.style.height = "30em"
     const myButton = document.getElementById("dieGen")
     const rollBtn = document.getElementById("diceRoll")
+    
     myButton.addEventListener("click", function () {
         console.log("I've been clicked")
         new Die()
 
 
+    })
+    rollBtn.addEventListener("click",function(){
+        console.log("Still works")
+        Die.roll()
     })
     class Die {
         constructor() {
@@ -32,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
             Dice.style.fontSize = "50px"
             Dice.style.fontWeight = "Bold"
             dieContainer.appendChild(Dice)
+            Dice.addEventListener("click",function() {
+                console.log("i've been clicked")
+                this.value = Math.floor(Math.random() * 7);
+                this.textContent=this.value;
+    })
+        }
+        static roll(){
+            this.value = Math.floor(Math.random() * 7);
+            this.textContent=this.value;
         }
     }
 
