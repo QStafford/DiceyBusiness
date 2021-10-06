@@ -5,5 +5,16 @@
 }
 .btnCon {
     text-align: center;
-    background-color: darkblue;  
+    height:10em;
+    border-color: lawngreen;
+    border-style: solid;
 }
+#dieGen {
+    position: relative;
+    top:52px;
+}
+#diceRoll {
+    position: relative;
+    top: 52px;
+}
+
