@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
         }
         static roll(){
-            this.value = Math.floor(Math.random() * 7);
-            this.textContent=this.value;
+            this.newValue = Math.floor(Math.random() * 7);
+            this.value = this.newValue
+            Dice.textContent = this.newValue
         }
     }
 
